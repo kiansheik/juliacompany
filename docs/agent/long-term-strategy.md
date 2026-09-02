@@ -42,6 +42,7 @@ Before creating each month's remuneration:
 8. Model the effect on Factor R for future PGDAS periods.
 9. Choose the gross pró-labore only after those checks.
 10. Recalculate INSS using the current year's contribution rules and ceiling; do not hardcode an old contribution amount.
+11. Decide the actual payment month deliberately. If company cash allows, paying a remuneration in its own competence month may improve Factor R sooner than letting the payment slip into the next month.
 
 For the current 2026 plan, use R$ 5.000,00 gross as the default candidate, not an unconditional rule.
 
@@ -57,6 +58,19 @@ Dentistry is subject to Factor R. Under the currently verified Simples rules:
 Important timing rule: the regulation refers to the amount **paid** in the 12 months before the PA. Therefore payroll competence and cash payment date are not interchangeable for Factor R.
 
 Example: if August remuneration is actually paid in September, it is still August remuneration for eSocial S-1200, but the cash payment occurs in September. That timing must be considered when determining which later PGDAS Factor R lookback windows include the payment.
+
+### Payment-timing strategy
+
+When there is sufficient company cash and no other reason to delay payment, prefer paying the current month's pró-labore before that month ends. This does not change the S-1200 competence, but it can cause the payment to enter a Factor R lookback one PA earlier.
+
+For the September 2026 planning case observed in the live workflow:
+
+- the July pró-labore was paid in July;
+- the August pró-labore was paid in September;
+- if a September pró-labore is also paid in September, both the August and September payments can be part of the payroll amounts paid during September for a later lookback;
+- under the then-current recurring revenue projection, that timing was expected to be enough to move the rough ratio above 0,28 for the October PA.
+
+This is a forecast, not an annex election. Recompute from actual source-backed revenue/payroll and trust the live PGDAS Factor R result.
 
 Do not choose payroll solely to manufacture a tax result. Compare:
 
@@ -122,4 +136,4 @@ Re-run the strategy immediately if any of these happen:
 
 ## What future agents must do
 
-Do not inherit the last month's gross pró-labore as a constant. Read current private state, project the year, verify current official rules, calculate the Factor R effect, and then recommend that month's amount.
+Do not inherit the last month's gross pró-labore as a constant. Read current private state, project the year, verify current official rules, calculate the Factor R effect, and then recommend that month's amount and payment timing.
