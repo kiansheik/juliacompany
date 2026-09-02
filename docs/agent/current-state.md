@@ -13,21 +13,20 @@ Current reconstruction from private evidence and the live portal session:
 - June 2026 PGDAS-D was then retified so competence history reflects the source documents while the cash-basis taxable amount remains tied to actual June receipts.
 - The June correction did not change the declared debt; the original June DAS was already recorded as paid, so no duplicate DAS was needed.
 - July 2026 PGDAS-D was transmitted after the historical corrections. DAS generation was a separate step; the overdue DAS was generated and paid, with private declaration/receipt/DAS/payment evidence retained locally.
-- August 2026 PGDAS-D was transmitted as an original declaration with R$ 8.250,00 of cash-basis revenue and R$ 1.278,75 of Simples debt. The DAS was generated and paid from the company account, with declaration receipt, DAS, and payment proof retained in ignored private evidence.
+- August 2026 PGDAS-D was transmitted as an original declaration with source-backed August cash revenue. The DAS was generated and paid from the company account, with declaration receipt, DAS, and payment proof retained in ignored private evidence.
 - The live PGDAS-D screen sequence and reconciliation rules are documented in `docs/instructions/pgdas-d.md`.
-- July payroll/eSocial is closed. The S-1299 response showed successful DCTFWeb transmission.
-- The live DCTFWeb declaration was found after switching e-CAC to the company/legal-representative profile. The July declaration appeared as active, originated from eSocial, with an outstanding previdenciary balance.
-- The July DCTFWeb DARF was generated and paid; payment evidence was supplied in the live session and should be retained in ignored private evidence.
-- The DCTFWeb/e-CAC screen flow is documented in `docs/instructions/dctfweb.md`.
+- July payroll/eSocial is closed. The S-1299 response showed successful DCTFWeb transmission and the DCTFWeb DARF was generated and paid.
+- The live DCTFWeb declaration was found after switching e-CAC to the company/legal-representative profile. The DCTFWeb/e-CAC screen flow is documented in `docs/instructions/dctfweb.md`.
 - The durable pró-labore / personal-IR / Factor R strategy is documented in `docs/agent/long-term-strategy.md`.
 - For 2026 only, the current planning candidate is up to R$ 5.000,00 gross monthly pró-labore when the annual projection and company economics support it. This is a planning target, not a hardcoded payroll amount.
-- August 2026 S-1200 remuneration was entered using the established working-partner setup, with a gross pró-labore of R$ 5.000,00.
+- August 2026 S-1200 remuneration was entered using the established working-partner setup with the planned gross pró-labore.
 - August 2026 payroll was closed successfully. The closing result returned `202 - Sucesso com advertência`; warning code `1727` contained DCTFWeb message `446`, confirming successful immediate DCTFWeb transmission.
-- The 08/2026 DCTFWeb DARF was generated and paid, and payment evidence was supplied in the live session and retained in ignored private evidence.
-- The net August pró-labore was paid to the working partner in September, with the bank transfer explicitly described as referring to 08/2026; payment evidence was supplied and retained in ignored private evidence.
-- Because that payment occurred in September, August correctly closed with remuneration information present and payment information absent. The corresponding S-1210 must be entered in the September payment period and reference the August remuneration/demonstrative.
-- Remaining August-cycle work: enter the September S-1210 for the August remuneration using the actual September payment date and saved bank evidence. Once that event is saved successfully, August is fully closed from the recurring tax/payroll workflow perspective.
-- A new service/NFS-e request is pending and should be processed from its source request rather than from memory.
+- The 08/2026 DCTFWeb DARF was generated and paid, and the net August pró-labore was paid to the working partner in September with private bank evidence retained.
+- Because the August payment occurred in September, August correctly closed with remuneration information present and payment information absent. The corresponding S-1210 was subsequently entered in the September payment period referencing the August remuneration/demonstrative.
+- August is now fully closed from the recurring NFS-e/PGDAS/payroll/DCTFWeb workflow perspective.
+- A new recurring service/NFS-e request is pending. Process it from the exact source request, not from memory; the source request may contain competence/date and additional-information wording that must be copied accurately.
+- September planning: re-run the R$ 5.000,00 gross pró-labore candidate against the annual taxable-income projection and company cash. If selected, prefer to pay the September remuneration within September rather than slipping payment into October, because Factor R uses payroll amounts paid in the 12 months before the PA.
+- Conditional forecast only: if September service competence continues at the recurring R$ 8.250,00 level and September gross pró-labore is R$ 5.000,00 and is actually paid in September, the October Factor R lookback should include the July payroll payment plus both R$ 5.000,00 payments made in September. On the currently reconstructed revenue history this would put the rough ratio above 0,28. The live PGDAS calculation remains authoritative; do not hardcode Annex III.
 - `make credentials-pgdas` is available as a local clipboard helper for PGDAS-D login fields; it reads ignored private secrets and prints no credential values.
 
 Do not treat any time-sensitive due date or threshold as permanently valid. Items marked `NEEDS CURRENT VERIFICATION` require current official-source review before live action.
