@@ -13,6 +13,7 @@ Current reconstruction from private evidence and the live portal session:
 - June 2026 PGDAS-D was then retified so competence history reflects the source documents while the cash-basis taxable amount remains tied to actual June receipts.
 - The June correction did not change the declared debt; the original June DAS was already recorded as paid, so no duplicate DAS was needed.
 - July 2026 PGDAS-D was transmitted after the historical corrections. DAS generation was a separate step; the overdue DAS was generated and paid, with private declaration/receipt/DAS/payment evidence retained locally.
+- August 2026 PGDAS-D was transmitted as an original declaration with R$ 8.250,00 of cash-basis revenue and R$ 1.278,75 of Simples debt. The DAS was generated and paid from the company account, with declaration receipt, DAS, and payment proof retained in ignored private evidence.
 - The live PGDAS-D screen sequence and reconciliation rules are documented in `docs/instructions/pgdas-d.md`.
 - July payroll/eSocial is closed. The S-1299 response showed successful DCTFWeb transmission.
 - The live DCTFWeb declaration was found after switching e-CAC to the company/legal-representative profile. The July declaration appeared as active, originated from eSocial, with an outstanding previdenciary balance.
@@ -25,7 +26,7 @@ Current reconstruction from private evidence and the live portal session:
 - The 08/2026 DCTFWeb DARF was generated and paid, and payment evidence was supplied in the live session and retained in ignored private evidence.
 - The net August pró-labore was paid to the working partner in September, with the bank transfer explicitly described as referring to 08/2026; payment evidence was supplied and retained in ignored private evidence.
 - Because that payment occurred in September, August correctly closed with remuneration information present and payment information absent. The corresponding S-1210 must be entered in the September payment period and reference the August remuneration/demonstrative.
-- Remaining August-cycle work: (1) enter the September S-1210 for the August remuneration using the actual September payment date and saved bank evidence; and (2) complete PGDAS-D for PA 08/2026, reconciling August competence/cash revenue and the Factor R payroll window from source evidence before transmission/payment.
+- Remaining August-cycle work: enter the September S-1210 for the August remuneration using the actual September payment date and saved bank evidence. Once that event is saved successfully, August is fully closed from the recurring tax/payroll workflow perspective.
 - A new service/NFS-e request is pending and should be processed from its source request rather than from memory.
 - `make credentials-pgdas` is available as a local clipboard helper for PGDAS-D login fields; it reads ignored private secrets and prints no credential values.
 
