@@ -83,6 +83,18 @@ Do not choose payroll solely to manufacture a tax result. Compare:
 Official source: Resolução CGSN nº 140/2018, art. 26, compiled text.
 https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=92278&naoPublicado=&visao=compilado
 
+## 2027 IBS/CBS election
+
+A dedicated sourced decision record is maintained in `docs/agent/2027-ibs-cbs-decision.md`.
+
+Current decision as of 2026-09-02: **do not elect the regular IBS/CBS regime in September 2026 for Jan-Jun 2027; remain in pure Simples and re-evaluate in March 2027 for Jul-Dec.**
+
+The decision assumes the current small dentistry-service model continues: recurring revenue around the existing level, payroll-heavy costs, no large creditable supply chain, and no agreement for the customer to pay regular-regime IBS/CBS on top of the existing service fee.
+
+Do not treat this as permanent. Re-open the decision if the final CBS rate, Factor R, creditable purchases, customer pricing/tax treatment, or option deadlines change.
+
+Also note that the 2026 cash-basis PGDAS workflow must not be carried into 2027. Receita has announced the end of the monthly Simples cash-basis option from 1 January 2027. See the sourced decision document for the operational impact.
+
 ## eSocial timing model
 
 Keep remuneration competence and payment month separate.
@@ -131,9 +143,11 @@ Re-run the strategy immediately if any of these happen:
 - A proposed monthly payment exceeds the verified zero-IRRF range.
 - Factor R approaches the 0,28 boundary.
 - Company cash becomes tight.
-- INSS, IRPF, Simples, or eSocial rules change.
+- INSS, IRPF, Simples, IBS/CBS, or eSocial rules change.
 - The calendar year changes.
 
 ## What future agents must do
 
 Do not inherit the last month's gross pró-labore as a constant. Read current private state, project the year, verify current official rules, calculate the Factor R effect, and then recommend that month's amount and payment timing.
+
+For 2027 IBS/CBS questions, read `docs/agent/2027-ibs-cbs-decision.md` before redoing the analysis. Preserve the recorded decision unless a documented assumption or legal rule has changed.
