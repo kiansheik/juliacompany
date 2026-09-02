@@ -7,6 +7,7 @@ Keep credentials in `private/secrets/` only.
 - Official source: Receita Federal / Simples Nacional portal.
 - Use for monthly PGDAS-D apuração and DAS generation.
 - Internal source: `private/state/invoices.json` and `private/state/receipts.json`.
+- Local clipboard helper: `make credentials-pgdas` copies CPF, CNPJ, and access code from `private/secrets/` one at a time without printing values.
 
 ## Municipal NFS-e
 

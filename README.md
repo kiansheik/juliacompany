@@ -28,6 +28,7 @@ python3 scripts/pgdas.py 2026-07
 python3 scripts/payroll.py 2026-08 --gross 5000
 python3 scripts/check.py
 make check
+make credentials-pgdas
 ```
 
 ## Monthly Agent Start

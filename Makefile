@@ -1,4 +1,4 @@
-.PHONY: check test inventory
+.PHONY: check test inventory credentials-pgdas
 
 check:
 	python3 -m unittest discover -s tests
@@ -9,3 +9,6 @@ test:
 
 inventory:
 	python3 scripts/inventory.py
+
+credentials-pgdas:
+	python3 scripts/credentials_pgdas.py

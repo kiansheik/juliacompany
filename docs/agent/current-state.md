@@ -13,5 +13,6 @@ Current reconstruction from private evidence:
 - July payroll/eSocial evidence exists, including remuneration and closing XML. DCTFWeb/payment proof remains unresolved.
 - No PGDAS-D receipt was found for July or August 2026.
 - Private monthly reports were generated for 2026-06, 2026-07, and 2026-08.
+- `make credentials-pgdas` is available as a local clipboard helper for PGDAS-D login fields; it reads ignored private secrets and prints no credential values.
 
 Do not treat any time-sensitive due date as legally verified. Items marked `NEEDS CURRENT VERIFICATION` require current official-source review before live action.
