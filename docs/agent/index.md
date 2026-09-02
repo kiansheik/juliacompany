@@ -4,6 +4,7 @@ Start here for repo context.
 
 - `AGENTS.md`: mandatory operating and safety rules.
 - `docs/agent/current-state.md`: current local reconstruction and safety posture.
+- `docs/agent/long-term-strategy.md`: durable payroll/IRPF/Factor R strategy and monthly decision framework.
 - `docs/agent/repo-map.md`: repository layout.
 - `docs/agent/open-questions.md`: unresolved questions.
 - `docs/instructions/`: recurring workflows.

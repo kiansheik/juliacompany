@@ -5,7 +5,7 @@ This repository is public-safe by design. Treat anything private as permanently 
 ## Start Every Session
 
 1. Run `git status --short`.
-2. Read `docs/agent/index.md`, `docs/agent/current-state.md`, `docs/agent/repo-map.md`, and `docs/agent/open-questions.md`.
+2. Read `docs/agent/index.md`, `docs/agent/current-state.md`, `docs/agent/long-term-strategy.md`, `docs/agent/repo-map.md`, and `docs/agent/open-questions.md`.
 3. Do not run `git add -A`.
 4. Do not commit or push unless explicitly asked.
 5. Stop and report immediately if any private source document, credential, CPF/CNPJ, access code, bank identifier, or real source file is tracked.
@@ -41,6 +41,10 @@ Keep these independent: NFS-e issue date, service competence, cash receipt date,
 ## Do Not Conflate IR Concepts
 
 Keep separate monthly IRRF, annual taxable income, whether tax is ultimately owed, and whether DIRPF filing is mandatory. Zero monthly IRRF does not prove that no annual return is required.
+
+## Payroll Strategy Is Recomputed, Not Copied
+
+The prior month's pró-labore is not an automatic default. Before recommending a new month, read `docs/agent/long-term-strategy.md`, reconcile private year-to-date income, project annual personal taxable income, verify current IR/INSS rules, and model the Factor R effect.
 
 ## After Significant Work
 
