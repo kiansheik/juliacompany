@@ -6,5 +6,7 @@
 - If September pró-labore remains at the current candidate, prefer actual payment within September when cash allows so the payment can enter the Factor R lookback earlier; then record the matching S-1210 in the actual payment period.
 - Track when the rolling Factor R first reaches or exceeds 0,28 and compare the resulting Annex III savings with payroll/INSS cost. Do not carry forward the NFS-e approximate Simples rate after an Annex/Factor R change without recomputing it from authoritative current data.
 - When September PGDAS is processed, reconcile competence and cash separately against the newly issued NFS-e and the eventual bank receipt.
+- For Jan-Jun 2027, the recorded decision is to remain in pure Simples rather than elect regular-regime IBS/CBS. In March 2027, re-run `docs/agent/2027-ibs-cbs-decision.md` for Jul-Dec using the final CBS rate, actual eligible input credits, current Factor R/RBT12, current customer pricing/tax treatment, and then-current option deadlines.
+- Before the first 2027 PGDAS period, update the runbook for the end of the monthly Simples cash-basis option and verify the final effective revenue-recognition rules.
 - Re-check the 2027 DIRPF filing-obligation rules when Receita publishes them; zero annual IR due for 2026 does not itself prove that no return must be filed.
 - Verify all time-sensitive due dates, IRPF/INSS tables, Factor R rules, IBS/CBS treatment, and penalties against current official sources before each live filing.
