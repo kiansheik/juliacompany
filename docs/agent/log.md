@@ -22,3 +22,5 @@
 - Expanded `docs/instructions/nfse.md` into a live portal runbook with stable carry-forward defaults, period-specific fields, stop conditions, review checks, evidence requirements, and interaction lessons aimed at reducing future copy/paste.
 - Recorded that the approximate Simples rate on NFS-e must be recomputed when Factor R/Annex treatment changes rather than blindly copied from the last invoice.
 - Fetched and fast-forwarded local `main` from `0aac65b` to `1f3ab01`, preserving the unstaged local `Makefile` change.
+- Researched the 2027 pure-Simples versus regular-regime IBS/CBS election using current Receita/Fazenda guidance, LC 214/2025, the 2027-2028 Annex III partition, health-service rate reduction, credit rules, and the announced end of monthly Simples cash-basis apuração.
+- Recorded the current 2027 decision in `docs/agent/2027-ibs-cbs-decision.md`: do not elect regular IBS/CBS for Jan-Jun 2027 under the existing business model; re-evaluate in March 2027 for Jul-Dec using the final CBS rate, actual credits, Factor R and customer pricing/tax treatment.
