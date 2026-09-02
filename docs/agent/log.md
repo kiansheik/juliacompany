@@ -21,3 +21,4 @@
 - Confirmed from the signed XML the recurring National NFS-e profile for the current company/service: ME/EPP Simples option, federal+municipal apuração through Simples, dentistry service code/NBS, non-retained ISS and federal contributions, and the Simples approximate-tax-rate field.
 - Expanded `docs/instructions/nfse.md` into a live portal runbook with stable carry-forward defaults, period-specific fields, stop conditions, review checks, evidence requirements, and interaction lessons aimed at reducing future copy/paste.
 - Recorded that the approximate Simples rate on NFS-e must be recomputed when Factor R/Annex treatment changes rather than blindly copied from the last invoice.
+- Fetched and fast-forwarded local `main` from `0aac65b` to `1f3ab01`, preserving the unstaged local `Makefile` change.

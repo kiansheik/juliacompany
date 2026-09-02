@@ -12,3 +12,8 @@ inventory:
 
 credentials-pgdas:
 	python3 scripts/credentials_pgdas.py
+
+push:
+	git add .
+	git commit
+	git push origin HEAD
