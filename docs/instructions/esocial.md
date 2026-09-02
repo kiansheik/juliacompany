@@ -114,8 +114,16 @@ Mark **Solicitação de transmissão imediata da DCTFWeb** when the intent is to
 
 Then click **Salvar**. Closing is asynchronous in Web Geral: return to **Gestão de Folha**, expand **Resultado do processamento - Fechamentos solicitados pela web**, and refresh until a processed result appears. Verify that the period becomes `Fechada` before treating the closing as complete.
 
+### What a successful closing looks like
+
+A successful live closing can return `202 - Sucesso com advertência` rather than a plain success. In the observed 08/2026 run, warning code `1727` contained DCTFWeb message `446`, explicitly stating that DCTFWeb transmission was completed successfully and directing the operator to e-CAC to generate the arrecadação document if applicable. Treat that warning as a successful closing/transmission result, not as a filing failure.
+
+The downloadable worker-list CSV from the closing result can be used as an additional reconciliation artifact. In the observed pattern, the worker row had a remuneration-event identifier populated while the payment-event column was blank, which was correct because the remuneration belonged to the closed competence but payment would occur in the following month.
+
 After successful processing, retain private evidence when available:
 
+- closing-result PDF,
+- downloadable worker-list CSV,
 - S-1299 XML/event data,
 - S-1299 processing/receipt response,
 - any warning/error text,
