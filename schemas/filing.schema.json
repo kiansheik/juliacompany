@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Filing",
+  "type": "object",
+  "required": ["id", "system", "period", "declaration_type", "submitted", "source_ids"],
+  "properties": {
+    "id": {"type": "string"},
+    "system": {"type": "string"},
+    "period": {"type": "string", "pattern": "^\\d{4}-\\d{2}$"},
+    "declaration_type": {"type": "string"},
+    "submitted": {"type": "boolean"},
+    "submission_timestamp": {"type": ["string", "null"]},
+    "calculated_tax": {"type": ["string", "null"]},
+    "due_date": {"type": ["string", "null"]},
+    "payment_status": {"type": ["string", "null"]},
+    "source_ids": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}

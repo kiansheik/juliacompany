@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Invoice",
+  "type": "object",
+  "required": ["id", "issue_date", "competence_date", "gross_amount", "source_ids"],
+  "properties": {
+    "id": {"type": "string"},
+    "nfse_number": {"type": ["string", "null"]},
+    "issue_date": {"type": ["string", "null"], "format": "date"},
+    "competence_date": {"type": ["string", "null"], "format": "date"},
+    "gross_amount": {"type": "string"},
+    "municipality": {"type": ["string", "null"]},
+    "service_category": {"type": ["string", "null"]},
+    "iss_retained": {"type": ["string", "boolean", "null"]},
+    "payer": {"type": ["string", "null"]},
+    "source_ids": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,0 +1,15 @@
+# Copy to private/state/company.yaml and fill with private values locally.
+company:
+  legal_name: "Example Company LTDA"
+  tax_id: "PRIVATE"
+  simples_nacional:
+    cash_basis: true
+    option_evidence: []
+  municipality: "Example Municipality"
+people:
+  owner:
+    name: "Example Person"
+    cpf: "PRIVATE"
+portals:
+  municipal_nfse:
+    login_hint: "Store credentials in private/secrets/ only."

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cash Receipt",
+  "type": "object",
+  "required": ["id", "kind", "amount", "linked_invoice_ids", "source_ids"],
+  "properties": {
+    "id": {"type": "string"},
+    "kind": {"type": "string"},
+    "date": {"type": ["string", "null"], "format": "date"},
+    "received_period": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}$"},
+    "amount": {"type": "string"},
+    "payer": {"type": ["string", "null"]},
+    "bank_transaction_reference": {"type": ["string", "null"]},
+    "linked_invoice_ids": {"type": "array", "items": {"type": "string"}},
+    "reconciliation_status": {"type": "string"},
+    "source_ids": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}

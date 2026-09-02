@@ -1,0 +1,20 @@
+{
+  "invoices": [
+    {
+      "id": "invoice-fictional-1",
+      "issue_date": "2026-07-03",
+      "competence_date": "2026-06-30",
+      "gross_amount": "1000.00",
+      "source_ids": ["src-fictional"]
+    }
+  ],
+  "receipts": [
+    {
+      "id": "receipt-fictional-1",
+      "received_period": "2026-07",
+      "amount": "1000.00",
+      "linked_invoice_ids": ["invoice-fictional-1"],
+      "source_ids": ["src-fictional"]
+    }
+  ]
+}
