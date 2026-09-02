@@ -16,11 +16,14 @@ Current reconstruction from private evidence and the live portal session:
 - The live PGDAS-D screen sequence and reconciliation rules are documented in `docs/instructions/pgdas-d.md`.
 - July payroll/eSocial is closed. The S-1299 response showed successful DCTFWeb transmission.
 - The live DCTFWeb declaration was found after switching e-CAC to the company/legal-representative profile. The July declaration appeared as active, originated from eSocial, with an outstanding previdenciary balance.
-- A DCTFWeb DARF was generated for July. The user reports that it was paid; a generated DARF PDF alone is not payment proof, so the bank receipt should remain in ignored private evidence and be inventoried before private state is marked evidence-confirmed paid.
-- The DCTFWeb/e-CAC screen flow is now documented in `docs/instructions/dctfweb.md`.
+- The July DCTFWeb DARF was generated and paid; payment evidence was supplied in the live session and should be retained in ignored private evidence.
+- The DCTFWeb/e-CAC screen flow is documented in `docs/instructions/dctfweb.md`.
 - The durable pró-labore / personal-IR / Factor R strategy is documented in `docs/agent/long-term-strategy.md`.
 - For 2026 only, the current planning candidate is up to R$ 5.000,00 gross monthly pró-labore when the annual projection and company economics support it. This is a planning target, not a hardcoded payroll amount.
-- August 2026 payroll/pro-labore remains the next payroll task. If August remuneration is paid in September, remuneration competence and S-1210 payment month must remain separate.
+- August 2026 S-1200 remuneration was entered using the established working-partner setup, with a gross pró-labore of R$ 5.000,00.
+- August 2026 payroll was closed successfully. The closing result returned `202 - Sucesso com advertência`; warning code `1727` contained DCTFWeb message `446`, confirming successful immediate DCTFWeb transmission.
+- Because the August pró-labore is being paid in September, August closed with remuneration information present and payment information absent. The corresponding S-1210 belongs to the September payment period and must reference the August remuneration.
+- The next payroll-tax task is to inspect the 08/2026 DCTFWeb declaration under the company/legal-representative e-CAC profile, generate/pay its DARF if there is a balance, and retain the declaration/receipt/DARF/payment evidence.
 - A new service/NFS-e request is pending and should be processed from its source request rather than from memory.
 - `make credentials-pgdas` is available as a local clipboard helper for PGDAS-D login fields; it reads ignored private secrets and prints no credential values.
 
