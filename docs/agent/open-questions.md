@@ -1,11 +1,12 @@
 # Open Questions
 
 - Copy/inventory the newly issued September NFS-e PDF/XML into ignored private evidence if not already done locally, then update `private/state/invoices.json` from the signed XML.
-- Confirm the actual September cash-receipt date when the recurring customer pays; cash date controls September PGDAS cash-basis revenue and remains distinct from NFS-e competence/issue date.
+- Obtain/save the 15/09/2026 bank statement or transaction proof for the reported Fundação Pio XII TED. The reported receipt is R$ 8.251,00, while the September NFS-e is R$ 8.250,00.
+- If the bank proof confirms R$ 8.251,00, classify the extra R$ 1,00 before September PGDAS. Do not silently book it as dentistry service revenue unless source evidence shows it is additional consideration for the service; customer overpayment/credit is a plausible accounting classification but must be source-backed.
 - Re-run the September pró-labore decision from the long-term strategy using current company cash and Julia's full-year taxable-income projection. The current planning candidate is R$ 5.000,00 gross, not an automatic constant.
 - If September pró-labore remains at the current candidate, prefer actual payment within September when cash allows so the payment can enter the Factor R lookback earlier; then record the matching S-1210 in the actual payment period.
 - Track when the rolling Factor R first reaches or exceeds 0,28 and compare the resulting Annex III savings with payroll/INSS cost. Do not carry forward the NFS-e approximate Simples rate after an Annex/Factor R change without recomputing it from authoritative current data.
-- When September PGDAS is processed, reconcile competence and cash separately against the newly issued NFS-e and the eventual bank receipt.
+- When September PGDAS is processed, reconcile competence and cash separately against the September NFS-e and the confirmed bank receipt/classification of the R$ 1,00 difference.
 - For Jan-Jun 2027, the recorded decision is to remain in pure Simples rather than elect regular-regime IBS/CBS. In March 2027, re-run `docs/agent/2027-ibs-cbs-decision.md` for Jul-Dec using the final CBS rate, actual eligible input credits, current Factor R/RBT12, current customer pricing/tax treatment, and then-current option deadlines.
 - Before the first 2027 PGDAS period, update the runbook for the end of the monthly Simples cash-basis option and verify the final effective revenue-recognition rules.
 - Re-check the 2027 DIRPF filing-obligation rules when Receita publishes them; zero annual IR due for 2026 does not itself prove that no return must be filed.
