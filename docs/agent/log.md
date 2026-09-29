@@ -24,3 +24,15 @@
 - Fetched and fast-forwarded local `main` from `0aac65b` to `1f3ab01`, preserving the unstaged local `Makefile` change.
 - Researched the 2027 pure-Simples versus regular-regime IBS/CBS election using current Receita/Fazenda guidance, LC 214/2025, the 2027-2028 Annex III partition, health-service rate reduction, credit rules, and the announced end of monthly Simples cash-basis apuração.
 - Recorded the current 2027 decision in `docs/agent/2027-ibs-cbs-decision.md`: do not elect regular IBS/CBS for Jan-Jun 2027 under the existing business model; re-evaluate in March 2027 for Jul-Dec using the final CBS rate, actual credits, Factor R and customer pricing/tax treatment.
+
+
+## 2026-09-29
+
+- Completed the September eSocial payroll cycle through S-1299 after September remuneration and payment information had been recorded.
+- Reviewed the downloaded S-1299 XML/receipt for PA 09/2026.
+- Confirmed remuneration and payment information were both present and immediate DCTFWeb transmission was requested.
+- Confirmed processing result `202 - Sucesso com advertência`; warning code `1727` contained DCTFWeb message `446`, explicitly confirming successful DCTFWeb transmission.
+- Recorded the important evidence boundary: S-1299 proves eSocial closing and DCTFWeb transmission status, but does not prove DARF generation or payment.
+- Updated the eSocial runbook for a month where remuneration and payment occur in the same PA.
+- Raw eSocial closing files remain private evidence and are intentionally not committed to public `main`.
+- Next live action is e-CAC / DCTFWeb for PA 09/2026, then DARF generation and payment evidence.
