@@ -1,6 +1,6 @@
 # Current State
 
-As of 2026-09-15, this repository is a public-safe operational toolkit with ignored private state.
+As of 2026-09-29, this repository is a public-safe operational toolkit with ignored private state.
 
 Tracked-safe material includes scripts, schemas, templates, sanitized docs, and tests. Private material is under `private/` and ignored by Git.
 
@@ -28,10 +28,14 @@ Current reconstruction from private evidence and the live portal session:
 - The signed XML confirmed the carry-forward National NFS-e profile: ME/EPP Simples option, federal+municipal apuração through Simples, dentistry national service code, dentistry NBS, non-retained PIS/COFINS/CSLL, and the Simples approximate-tax-rate field. The exact rate must be recomputed rather than copied after a Factor R/Annex change.
 - The full National NFS-e live workflow, recurring defaults, stop conditions, interaction lessons, and preferred future-agent response format are now documented in `docs/instructions/nfse.md`.
 - September NFS-e evidence still needs to be copied/inventoried into the ignored local `private/sources/2026/09/nfse/` area if that has not already happened outside this connector session.
-- On 2026-09-15 the recurring customer payment was reported as received by TED from Fundação Pio XII. The user corrected the initially misstated amount: the actual reported receipt is R$ 8.250,00, matching the September NFS-e exactly. The reported transaction date is 15/09/2026. Save the bank statement/transaction proof privately when available, but there is no longer any R$ 1,00 reconciliation discrepancy.
+- On 2026-09-15 the recurring customer payment was reported as received by TED from Fundação Pio XII. The user corrected the initially misstated amount: the actual reported receipt is R$ 8.250,00, matching the September NFS-e exactly. The reported transaction date is 15/09/2026. Save the bank statement/transaction proof privately when available.
 - For September PGDAS planning, the expected cash-basis service receipt is therefore R$ 8.250,00 on 15/09/2026, subject to final bank-proof reconciliation.
-- September payroll planning can proceed because the expected customer cash has arrived. Re-run the R$ 5.000,00 gross pró-labore candidate against the annual taxable-income projection and current cash; if still selected, prefer actual payment within September so it enters the Factor R lookback earlier.
-- Conditional forecast only: if September service cash is received as expected and September gross pró-labore is R$ 5.000,00 and actually paid in September, the October Factor R lookback should include the July payroll payment plus both R$ 5.000,00 payments made in September. On the currently reconstructed revenue history this was projected above 0,28. The live PGDAS calculation remains authoritative; do not hardcode Annex III.
+- September 2026 payroll has now been closed in eSocial. The reviewed S-1299 XML/receipt is for `2026-09` and records `evtRemun=S`, `evtPgtos=S`, and `transDCTFWeb=S`.
+- The September closing response returned `202 - Sucesso com advertência`. Warning code `1727` contains DCTFWeb message `446`, explicitly confirming that DCTFWeb transmission completed successfully and directing the operator to e-CAC to generate the collection document if applicable.
+- Treat the September S-1299 evidence as proof that eSocial closed and requested/succeeded in DCTFWeb transmission. It is **not** proof that the DCTFWeb declaration was reviewed, a DARF was generated, or the DARF was paid. Those are the next separate evidence steps.
+- The raw September S-1299 XML/receipt contains real identifiers, receipt/protocol information, and must remain private evidence under the ignored local source tree; do not commit it to public `main`.
+- Next immediate September payroll action: enter e-CAC in the company/legal-representative profile, open DCTFWeb for PA 09/2026, verify the transmitted declaration, save receipt/extract, generate the DARF, pay it from the company account when appropriate, and retain bank proof separately.
+- Conditional Factor R forecast remains: with the September remuneration/payment completed within September, the October Factor R lookback is expected to improve materially and was projected above 0,28 on the reconstructed history. The live PGDAS calculation remains authoritative; do not hardcode Annex III.
 - 2027 IBS/CBS planning was researched on 2026-09-02. Under the current stable dentistry-service model, the recorded decision is **not to elect regular-regime IBS/CBS for Jan-Jun 2027**; remain in pure Simples and re-evaluate in March 2027 for Jul-Dec. The sourced analysis, assumptions, break-even logic, and stop conditions are in `docs/agent/2027-ibs-cbs-decision.md`.
 - Future 2027 workflows must not copy the 2026 PGDAS cash-basis assumption. Receita has announced that the monthly Simples cash-basis option ends from 2027; verify the effective rule again before the first 2027 PA.
 - `make credentials-pgdas` is available as a local clipboard helper for PGDAS-D login fields; it reads ignored private secrets and prints no credential values.
