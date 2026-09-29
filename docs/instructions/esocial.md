@@ -144,3 +144,35 @@ Treat these as separate facts:
 5. DARF was actually paid.
 
 Each step needs its own evidence when available.
+
+
+## September 2026 same-month remuneration + payment closing
+
+Observed live for PA 09/2026 after the ordinary working-partner S-1200 and payment event were both present in September.
+
+For a month where remuneration and payment both occur in the same PA, the S-1299 closing should reflect:
+
+- remuneration information present;
+- payment information present;
+- unrelated event families absent when not applicable;
+- immediate DCTFWeb transmission requested when the operator wants the declaration sent automatically.
+
+The 09/2026 live closing returned:
+
+- response code `202` — `Sucesso com advertência`;
+- warning code `1727`;
+- DCTFWeb message `446`, stating that DCTFWeb transmission was completed successfully.
+
+This confirms the same success pattern previously observed in 08/2026, but with payment information present because September contained actual payment information. Do not interpret the warning as a failed closing.
+
+After this result:
+
+1. treat eSocial closing as complete;
+2. treat DCTFWeb transmission as successful;
+3. go to e-CAC in company/legal-representative context;
+4. verify the 09/2026 DCTFWeb declaration directly;
+5. save declaration receipt/extract;
+6. generate the DARF;
+7. pay separately and save bank proof.
+
+The raw S-1299 XML/receipt is private evidence because it contains real identifiers, event IDs, receipt/protocol values and signature material. Store it only in the ignored private evidence tree; tracked documentation should retain only sanitized behavior and result codes.
