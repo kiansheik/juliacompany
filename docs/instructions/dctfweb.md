@@ -15,11 +15,26 @@ For each period, track:
 
 Any current deadline or rule must be verified against official sources before live use.
 
+## Exact entry links
+
+When telling the operator to use DCTFWeb, always provide the exact clickable URL and the exact menu path. Do not make the operator search.
+
+Preferred e-CAC login:
+https://cav.receita.fazenda.gov.br/autenticacao/login/index
+
+After login, switch to the company/legal-representative context, then:
+**Declarações e Demonstrativos > Assinar e Transmitir DCTFWeb**
+
+Direct DCTFWeb application URL after authentication:
+https://dctfweb.cav.receita.fazenda.gov.br/aplicacoesweb/DCTFWeb/Default.aspx
+
+If the direct application URL redirects or stops working, use the e-CAC login URL and the menu path above, then update this runbook if Receita changed the route.
+
 ## Access path observed in September 2026
 
-1. Enter e-CAC.
+1. Enter e-CAC using the exact link above.
 2. Switch the e-CAC access profile to the company/legal-representative context before searching company DCTFWeb declarations.
-3. Open `Declarações e Demonstrativos > Assinar e Transmitir DCTFWeb`.
+3. Open **Declarações e Demonstrativos > Assinar e Transmitir DCTFWeb**.
 
 If eSocial shows a successful DCTFWeb transmission but the DCTFWeb page returns no declaration, first verify the e-CAC profile. Searching from the representative's personal CPF context can produce an empty result even though the company declaration exists.
 
@@ -80,3 +95,7 @@ For an overdue period, let DCTFWeb/SENDA calculate multa and juros. Do not manua
 After payment, save the bank/PIX receipt separately. The generated DARF is evidence of the amount requested, not evidence that the bank payment settled.
 
 Prefer payment from the company account so the bookkeeping trail remains clean. If a partner pays personally, flag the transaction for proper accounting treatment rather than pretending company cash paid it.
+
+## Operator-response rule
+
+Whenever a future agent tells the operator to open a recurring government portal, the response should include the exact clickable URL first and then the exact menu path. The purpose of this repository is to eliminate repeated portal searching and navigation rediscovery.
