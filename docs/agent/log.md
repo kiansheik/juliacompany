@@ -38,3 +38,6 @@
 - Next live action is e-CAC / DCTFWeb for PA 09/2026, then DARF generation and payment evidence.
 
 - Generated the 09/2026 DCTFWeb DARF for R$ 550,00, code 1099 (contribuinte individual - 11%), due 20/10/2026; payment proof is still pending and must be retained separately.
+- Received evidence of the 29/09/2026 net September pró-labore payment for R$ 4.450,00 from the company account.
+- Received company-bank payment proof for the 09/2026 DCTFWeb DARF of R$ 550,00 on 29/09/2026; September payroll/DCTFWeb is now paid.
+- Researched expense-reimbursement treatment for personally paid transportation. Recorded that genuine documented work travel/expense reimbursements can retain indemnity character, but ordinary residence-to-regular-workplace Uber commuting for the working partner should not be treated as tax-free reimbursement.
