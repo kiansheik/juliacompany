@@ -36,3 +36,5 @@
 - Updated the eSocial runbook for a month where remuneration and payment occur in the same PA.
 - Raw eSocial closing files remain private evidence and are intentionally not committed to public `main`.
 - Next live action is e-CAC / DCTFWeb for PA 09/2026, then DARF generation and payment evidence.
+
+- Generated the 09/2026 DCTFWeb DARF for R$ 550,00, code 1099 (contribuinte individual - 11%), due 20/10/2026; payment proof is still pending and must be retained separately.
