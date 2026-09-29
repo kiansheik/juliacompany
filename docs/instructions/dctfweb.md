@@ -99,3 +99,20 @@ Prefer payment from the company account so the bookkeeping trail remains clean. 
 ## Operator-response rule
 
 Whenever a future agent tells the operator to open a recurring government portal, the response should include the exact clickable URL first and then the exact menu path. The purpose of this repository is to eliminate repeated portal searching and navigation rediscovery.
+
+
+## Important: "Saldo a Pagar" in the declaration list is historical
+
+Receita's official DCTFWeb Q&A states that the `Saldo a Pagar` displayed in the DCTFWeb portal is the historical balance at the moment the declaration was transmitted. It does **not** automatically decrease after a DARF is paid.
+
+Therefore:
+
+- a row that still shows `Saldo a Pagar` does **not** by itself mean the tax is unpaid;
+- do not generate/pay a second DARF merely because the declaration list still shows the original balance;
+- payment status must be checked from payment evidence and, when needed, the taxpayer's fiscal situation in Receita's service portal.
+
+This behavior was encountered live in September 2026: PA 08/2026 still displayed the original R$ 550,00 balance even though a matching DARF for PA 08/2026 and a company-bank payment proof for R$ 550,00 dated 02/09/2026 had already been retained.
+
+Official source, last verified 2026-09-29:
+Receita Federal, Perguntas e Respostas da DCTFWeb, item 1.7 ("O saldo a pagar no Portal da DCTFWeb não diminui automaticamente após a quitação do DARF").
+https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb/arquivos/perguntas-e-respostas-dctfweb-2025-09-23.pdf
